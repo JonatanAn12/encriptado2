@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul id="alura">
+                 <a href="https://www.aluracursos.com/"><i class="fa-brands fa-amilia"></i></a>
+                <img src="img/logo-aluraespanhol.svg" alt="">
+            </ul>
+        </nav>
+    </header>
+<div class="main-content">
+    
+    <div id="entrada">
+        <textarea id="entrarDigitos" placeholder="Introduce el texto."></textarea>
+        <div id="contenedor-botones">
+         <button id="btnEncriptar">Encriptar</button>
+         <button id="btnDesencriptar">Desencriptar</button>
+        </div>
+        <label>
+            <input type="checkbox" id="mantenerTexto"> Mantener texto original
+        </label>
+    </div>
+    <div id="contenedor-salida">
+     <textarea id="salidaTexto" placeholder="Aquí está el resultado" readonly></textarea>
+     <button id="copiar"><i class="fa-solid fa-copy"></i></button>
+        <div id="texto">
+            <b><p>No se ingreso texto</p></b>
+            <p>Ingresa los dígitos que quieras encriptar o desencriptar</p>
+        </div>
+    </div>
+</div>
+    
+</div>
+    <footer class="footer">
+        <h2 class="titulo">Mis redes sociales</h2>
+        <div class="redes">
+            <a href="https://www.youtube.com/channel/UCMOBa9FjAXK026VN9kfQCnw"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100006779760390&locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jona_andres.sanchez/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/JonatanAn12"><i class="fa-brands fa-github-alt"></i></a>
+
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

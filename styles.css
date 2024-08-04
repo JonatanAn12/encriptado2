@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+#entrada, #contenedor-salida {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 45%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    resize: none;
+}
+
+#contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.nav #alura {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px auto;
+    width: 90%;
+}
+
+.nav #alura a {
+    background-color: #183153;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 26px;
+    padding: 15px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+
+}
+
+.nav #alura a:hover {
+    background-color: #333;
+}
+
+.nav #alura img {
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 26px;
+    padding: 15px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#copiar {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#texto {
+    text-align: center;
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-top: auto;
+}
+
+.rigth-section {
+    order: 0; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 45%;
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+    margin: 20px;
+    padding: 15px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+} 
+
+.redes a:hover {
+    background-color: #3d3c3c;
+}
+
+#imagen {
+    width: 100%;
+    height: 220px;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #entrada, #contenedor-salida {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #entrada, #contenedor-salida {
+        width: 90%;
+    }
+
+    #contenedor-botones {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .right-section {
+        width: 100%;
+        order: -1; /* Esto moverá la sección derecha arriba en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    #entrada, #contenedor-salida {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    textarea {
+        height: 150px;
+    }
+    .footer {
+        gap: 5px;
+    }
+}
